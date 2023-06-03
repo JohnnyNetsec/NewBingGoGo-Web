@@ -58,7 +58,7 @@ window.addEventListener('load',async ()=>{
 
     const chatOptionsSets_Write = new ChatOptionsSets_Write();
     const chatFirstMessages = new ChatFirstMessages();
-    chatFirstMessages.bingmMessages = ['输入文章标题即可开始创作！'];
+    chatFirstMessages.bingmMessages = ['Enter article title to start creating'];
     const bingChat = new BingChat(chatFirstMessages,chatOptionsSets_Write); //聊天对象 BingChat 对象
 
     const parserReturnMessage = new ParserReturnWorker(
@@ -84,10 +84,10 @@ window.addEventListener('load',async ()=>{
         document.getElementById('goGoSubtitle')
     );
     titleManager.waitingNext = ()=>{
-        titleManager.setSubtitleText("想创作什么呢？我来帮你！")
+        titleManager.setSubtitleText("What you want to create?")
     }
     titleManager.restart= ()=>{
-        titleManager.setSubtitleText("想创作什么呢？我来帮你！")
+        titleManager.setSubtitleText("What you want to create?")
     }
 
 
